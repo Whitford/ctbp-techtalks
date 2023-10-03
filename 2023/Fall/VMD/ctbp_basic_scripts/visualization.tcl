@@ -438,8 +438,8 @@ proc bicolor_scale {} {
     set colpcnt [expr ($i - $mincolorid) / double($colrange)]
 
     # Cyan --> Magenta
-    set firstColor { 0.9 0.9 0.9 }
-    set lastColor { 0.9 0.0 0.0 }
+    set firstColor { 0.8 0.8 0.8 }
+    set lastColor { 0.99 0.0 0.0 }
 
     set nc [lerpcolor $firstColor $lastColor $colpcnt]
 
