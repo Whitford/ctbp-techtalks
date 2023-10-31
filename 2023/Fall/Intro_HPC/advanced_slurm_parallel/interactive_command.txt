@@ -1,0 +1,1 @@
+run --pty --partition=ctbp-onuchic --account=ctbp-onuchic --ntasks=1 --mem=1G --time=00:30:00 $SHELL
