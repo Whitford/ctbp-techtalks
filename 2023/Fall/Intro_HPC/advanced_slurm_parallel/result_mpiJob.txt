@@ -1,0 +1,14 @@
+
+The following have been reloaded with a version change:
+  1) GCC/4.8.3 => GCC/12.2.0
+
+Rank: 6, Local Sum: 6251726.118055183, Time taken: 0.008025407791137695 seconds, Hostname: bc6u15n1, CPU Cores: {0, 16}
+Rank: 7, Local Sum: 6249688.216748035, Time taken: 0.010649919509887695 seconds, Hostname: bc6u15n1, CPU Cores: {0, 16}
+Rank: 4, Local Sum: 6247782.218500532, Time taken: 0.02540755271911621 seconds, Hostname: bc6u11n6, CPU Cores: {0, 16}
+Rank: 0, Local Sum: 6249870.264875703, Time taken: 0.028636693954467773 seconds, Hostname: bc6u11n6, CPU Cores: {0, 16}
+Result: 49994058.6731881
+Duration: 0.2377774715423584 seconds
+Rank: 3, Local Sum: 6248870.4672308285, Time taken: 0.00735926628112793 seconds, Hostname: bc6u11n6, CPU Cores: {0, 16}
+Rank: 5, Local Sum: 6247481.76059012, Time taken: 0.0072596073150634766 seconds, Hostname: bc6u11n6, CPU Cores: {0, 16}
+Rank: 2, Local Sum: 6250266.380522389, Time taken: 0.04738616943359375 seconds, Hostname: bc6u11n6, CPU Cores: {0, 16}
+Rank: 1, Local Sum: 6248373.246665308, Time taken: 0.007341146469116211 seconds, Hostname: bc6u11n6, CPU Cores: {0, 16}

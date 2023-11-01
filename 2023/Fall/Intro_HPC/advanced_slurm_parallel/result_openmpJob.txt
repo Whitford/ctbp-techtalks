@@ -1,0 +1,14 @@
+
+The following have been reloaded with a version change:
+  1) GCC/4.8.3 => GCC/12.2.0
+
+Result: 49997448.005967274
+Duration: 1.4853732585906982 seconds
+Thread ID: 3, Hostname: bc9u23n2, CPU Core: {0, 1, 2, 3, 16, 17, 18, 19}
+Thread ID: 2, Hostname: bc9u23n2, CPU Core: {0, 1, 2, 3, 16, 17, 18, 19}
+Thread ID: 0, Hostname: bc9u23n2, CPU Core: {0, 1, 2, 3, 16, 17, 18, 19}
+Thread ID: 4, Hostname: bc9u23n2, CPU Core: {0, 1, 2, 3, 16, 17, 18, 19}
+Thread ID: 1, Hostname: bc9u23n2, CPU Core: {0, 1, 2, 3, 16, 17, 18, 19}
+Thread ID: 5, Hostname: bc9u23n2, CPU Core: {0, 1, 2, 3, 16, 17, 18, 19}
+Thread ID: 6, Hostname: bc9u23n2, CPU Core: {0, 1, 2, 3, 16, 17, 18, 19}
+Thread ID: 7, Hostname: bc9u23n2, CPU Core: {0, 1, 2, 3, 16, 17, 18, 19}

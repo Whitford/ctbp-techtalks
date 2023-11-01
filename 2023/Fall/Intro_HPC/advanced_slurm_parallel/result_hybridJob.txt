@@ -1,0 +1,37 @@
+
+The following have been reloaded with a version change:
+  1) GCC/4.8.3 => GCC/12.2.0
+
+Rank: 7, Hostname: bc6u11n6, CPU Core: {0, 16}, Thread ID: 139880562571008
+Rank: 7, Hostname: bc6u11n6, CPU Core: {0, 16}, Thread ID: 139880554161920
+Time taken by Rank 7, Thread ID 139880562571008: 0.011620283126831055 seconds
+Time taken by Rank 7, Thread ID 139880554161920: 0.008053064346313477 seconds
+Rank: 3, Hostname: bc6u11n6, CPU Core: {0, 16}, Thread ID: 140212766127872
+Time taken by Rank 3, Thread ID 140212766127872: 0.008246660232543945 seconds
+Rank: 3, Hostname: bc6u11n6, CPU Core: {0, 16}, Thread ID: 140212766127872
+Time taken by Rank 3, Thread ID 140212766127872: 0.01568746566772461 seconds
+Rank: 6, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140144510199552
+Time taken by Rank 6, Thread ID 140144510199552: 0.00931096076965332 seconds
+Rank: 6, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140144510199552
+Time taken by Rank 6, Thread ID 140144510199552: 0.0091094970703125 seconds
+Rank: 4, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140606127339264
+Time taken by Rank 4, Thread ID 140606127339264: 0.008213043212890625 seconds
+Rank: 4, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140606127339264
+Time taken by Rank 4, Thread ID 140606127339264: 0.007732868194580078 seconds
+Rank: 5, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 139867967530752
+Time taken by Rank 5, Thread ID 139867967530752: 0.010780572891235352 seconds
+Rank: 5, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 139867891693312
+Time taken by Rank 5, Thread ID 139867891693312: 0.007910013198852539 seconds
+Rank: 1, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140578320983808
+Time taken by Rank 1, Thread ID 140578320983808: 0.008351564407348633 seconds
+Rank: 1, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140578239018752
+Time taken by Rank 1, Thread ID 140578239018752: 0.007642030715942383 seconds
+Rank: 2, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140512238843648
+Time taken by Rank 2, Thread ID 140512238843648: 0.008872747421264648 seconds
+Rank: 2, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140512230434560
+Time taken by Rank 2, Thread ID 140512230434560: 0.01044321060180664 seconds
+Rank: 0, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140375597180672
+Time taken by Rank 0, Thread ID 140375597180672: 0.008057832717895508 seconds
+Rank: 0, Hostname: bc6u11n5, CPU Core: {0, 1, 16, 17}, Thread ID: 140375588771584
+Time taken by Rank 0, Thread ID 140375588771584: 0.007113933563232422 seconds
+Total Sum: 100001714.0805047
