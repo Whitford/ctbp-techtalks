@@ -1,0 +1,12 @@
+FROM --platform=$BUILDPLATFORM ubuntu:22.04
+CMD ["bash"]
+ENV PATH=/opt/smog2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV TZ=Europe/Kiev
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone 
+RUN apt-get update && \
+	apt-get upgrade -y && \ 
+	apt-get install -y --no-install-recommends build-essential vim emacs nano openmpi-bin openmpi-doc libopenmpi-dev && \ 
+	mkdir /workdir && \
+	useradd -rm -d /home/techtalk -s /bin/bash -g root -G sudo -u 1001 techtalk -p "$(openssl passwd -1 techtalk)" 
+USER techtalk
+WORKDIR /workdir
