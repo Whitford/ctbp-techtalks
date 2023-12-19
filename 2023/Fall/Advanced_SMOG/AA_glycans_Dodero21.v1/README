@@ -1,0 +1,125 @@
+README for the AA_glycans_Dodero21.v1 force field (pre-release version 7/25/21).
+
+Authors:
+Esteban Dodero-Rojas (ed29@rice.edu)
+Paul Whitford (p.whitford@northeastern.edu)
+
+
+Included Files:
+README (this file)
+AA_glycan_Dodero21.v1.sif
+AA_glycan_Dodero21.v1.bif
+AA_glycan_Dodero21.v1.b
+AA_glycan_Dodero21.v1.nb
+AA_glycan_Dodero21.v1.extras
+AA_glycan_Dodero21.v1.map (for use with smog_adjustPDB)
+
+
+General description:
+This is an all-atom model, with bonded geometry (bond lengths and angles) defined based on the AMBER force field and glycans introduced. 
+
+
+Model Resolution:
+All non-H atoms are explicitly represented in RNA, DNA, glycans and proteins. Water molecules are not included. 
+
+
+Features specific to this model (described in Dodero-Rojas, Onuchic and Whitford, Elife, 2021): 
+The contact and dihedral interaction strengths were fixed to the default SMOG values calculated for SARS-CoV-2 Spike protein postfusion structure without glycans. The relevent lines that fix these weights are:
+<dihedral func="dihedral_cosine(?,0.9175916584,1)+dihedral_cosine(?,0.4587958292,3)" energyGroup="bb_a">
+<contact func="contact_1(6,12,?,0.5854496028818631940931)" contactGroup="c">
+Contacts with monosaccharides are not included in this model. Monosaccharides are required to have fixed stereochemistry, but not fixed dihedral configurations. Dihedral angles in the monosaccharides were given a flat potential. 
+
+
+Supported residues and atoms:
+Standard protein, RNA and DNA residues. The following Glycans are also defined: AMA, AFU, ANE, BGL, BMA, BGA.
+See .map file for full list of supported residues.
+
+
+Aspects built upon earlier models:
+The distribution of stabilizing energetic terms (i.e. dihedrals vs. contacts) was assigned consistent with Whitford et al, Proteins (2009) and Noel et al. PLOS Comp Bio (2016), calculated for the Spike protein. 
+
+The contact map is based on the Shadow Contact Map algorithm (Noel, et al. JCP 2012) with a 6A cutoff with 1A atom radius.
+
+The bond lengths and distances are assigned the values given in the AMBER FF03 force field (Duan, et al. JCC 2003), as employed in a previous AMBER-SMOG model (Whitford, et al. Viruses 2020. SMOG 2 Force Field Repo ID: SBM_AA-amber-bonds). Planar dihedrals are assigned cosine potentials with periodicity 2. 
+
+
+Version Information:
+These templates are only compatible with SMOG 2, versions 2.4 and later.
+This model has been used to perform simulations in Gromacs (2020.2) and openMM (via the openSMOG module). 
+
+
+Usage Notes:
+	Since monosaccharide-monosaccharide and monosaccharide-protein bonds can not be determined based on residue names and numbers, specific bonds need to be defined in the PBD file, as described in SMOG2 manual. 
+	For example, to create a bond between atom 1968 from chain 2 and atom 1 from chain 73 with the free_g energetics: 
+		BOND 2 1968 73 1 free_g
+	This contruct may represent either monosaccharide-monosaccharide or monosaccharide-protein bonds.
+
+
+Example MDP file:
+
+############## BEGIN MDP FILE ##############
+;Run control: A leap-frog algorithm for integrating Newton's equations.
+integrator               = sd
+;time step in femtoseconds
+dt                       = 0.002
+;number of stepsi
+nsteps                   = 20000000
+;frequency to write coordinates to output trajectory file
+nstxout                  = 0
+;frequency to write velocities to output trajectory file
+nstvout                  = 0
+;frequency to write force to output trajectory file
+nstfout                  = 5000
+;frequency to write energies to log file
+nstlog                   = 5000
+;frequency to write energies to energy file
+nstenergy                = 5000
+;frequency to write coordinates to xtc trajectory
+nstxtcout                = 5000
+;precision of xtc
+xtc_precision            = 1000
+;group(s) to write to xtc trajectory
+xtc_grps                 = system
+;group(s) to write to energy file
+energygrps               = system
+;Frequency to update the neighbor list (and the long-range forces,
+;when using twin-range cut-off's).
+nstlist                  = 20
+coulombtype              = Cut-off
+table-extension          = 20
+;Make a grid in the box and only check atoms in neighboring grid cells
+;when constructing a new neighbor list every nstlist steps.
+cutoff-scheme            = verlet
+ns_type                  = grid
+; ** cutoffs are short because it is only for the non-bonded
+; ** [ pairs ] are always calculated provided they are in
+; ** the same domain decomposition box. One would have to
+; ** increase the cutoff if using non-bonded electrostatics
+;cut-off distance for the short-range neighbor list
+rlist                    = 1.2
+;treatment of electrostatic interactions
+rcoulomb                 = 1.2
+;treatment of van der waals interactions
+rvdw                     = 1.2
+;need to use periodic boundary conditions since gromacs5
+;requires cutoff-scheme=verlet in order to use openmp
+;threads. So worry about your box dimensions in the .gro
+;and make sure they make sense.
+pbc                      = xyz
+;Temperature coupling
+tc-grps                  = system
+tau_t                    = 1.0
+ref_t                    = 70
+;Pressure coupling
+Pcoupl                   = no
+;Velocity generation
+gen_vel                  = yes
+gen_temp                 = 70
+gen_seed                 = -1
+; no constraints
+constraints              = none
+;if you have a very big box that the molecule doesn't cross
+;you can use this, otherwise no
+comm_mode = none
+############### END MDP FILE ###############
+

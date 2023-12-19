@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<sif>
+  <!-- templates compatible with SMOG version: -->
+  <version min="2.3"/>
+  <!-- FUNCTION DEFINITIONS -->
+  <!-- NOTE: Function definitions should only be changed if you modify the source code.-->
+  <functions>
+    <function name="bond_harmonic" directive="bonds"/>
+    <function name="bond_bytype" directive="bonds"/>
+    <function name="bond_type6" directive="bonds"/>
+    <function name="angle_harmonic" directive="angles"/>
+    <function name="angle_bytype" directive="angles"/>
+    <function name="dihedral_free" directive="dihedrals"/>
+    <function name="dihedral_cosine" directive="dihedrals"/>
+    <function name="dihedral_cosine4" directive="dihedrals"/>
+    <function name="dihedral_harmonic" directive="dihedrals"/>
+    <function name="contact_1" directive="pairs" exclusions="1"/>
+    <function name="contact_free" directive="pairs" exclusions="0"/>
+  </functions>
+  <!-- HAMILTONIAN SETTINGS -->
+  <settings>
+    <!-- ENERGY/CONTACT GROUPS -->
+    <Groups>
+      <!-- NUCLEIC ENERGY GROUPS -->
+      <!-- Not Normalized -->
+      <energyGroup name="bb_n" residueType="nucleic" normalize="0"/>
+      <energyGroup name="sc_n" residueType="nucleic" normalize="0"/>
+      <!-- Not-Normalized -->
+      <energyGroup name="pr_n" residueType="nucleic" normalize="0"/>
+      <!-- AMINO ENERGY GROUPS -->
+      <!-- Not Normalized -->
+      <energyGroup name="bb_a" residueType="amino" normalize="0"/>
+      <energyGroup name="sc_a" residueType="amino" normalize="0"/>
+      <!-- Not-Normalized -->
+      <energyGroup name="pr_a" residueType="amino" normalize="0"/>
+      <energyGroup name="pro_a" residueType="amino" normalize="0"/>
+      <energyGroup name="r_a" residueType="amino" normalize="0"/>
+      <!-- LIGAND ENERGY GROUP -->
+      <energyGroup name="bb_l" residueType="ligand" normalize="0"/>
+      <energyGroup name="r_l" residueType="ligand" normalize="0"/>
+      <!-- ESTEBAN -->
+      <!-- GLYCAN ENERGY GROUP -->
+      <energyGroup name="bb_g" residueType="glycan" normalize="0"/>
+      <energyGroup name="free_g" residueType="glycan" normalize="0"/>
+      <!-- Global Contacts Settings -->
+      <contactGroup name="c" normalize="0"/>
+      <contactGroup name="free" normalize="0"/>
+      <!-- Contact/Dihedral Group ratio: These are only used when normalization is turned on for energy groups-->
+      <groupRatios contacts="2" dihedrals="1"/>
+    </Groups>
+    <dihedralNormalization dihedralCounting="1"/>
+    <!-- CONTACT MAP SETTINGS -->
+    <!-- NOTE: If another template is provided with the -t_contacts flag, then these settings will be ignored-->
+    <Contacts method="shadow" contactDistance="6" shadowRadius="1" shadowRadiusBonded="0.5"/>
+    <bondsThreshold shortBond="0.08" longBond="0.2"/>
+    <anglesThreshold smallAngles="90" largeAngles="140"/>
+    <contactsThreshold shortContacts="0.1"/>
+  </settings>
+</sif>

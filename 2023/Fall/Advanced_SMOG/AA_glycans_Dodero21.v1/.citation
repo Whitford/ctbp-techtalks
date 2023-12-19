@@ -1,0 +1,15 @@
+--All-Atom Model-- 
+Whitford PC, et al. (2009) Proteins: Structure, Function, Bioinformatics, 75, 430-441. 
+
+--Contact Potentials--
+Shadow Algorithm: Noel JK, Whitford PC, Onuchic, JN (2012) J Phys Chem, 116, 8692-8702.
+
+--AMBER Parameters--
+vdW, atomic masses, bond lengths and bond angles are from AMBER03. 
+Duan Y, et al. (2003) J Comp Chem, 24, 1999-2012.
+
+--AMBER-SMOG--
+Whitford PC, Jiang W, and Serwer P. (2020) Viruses 12, 1273.
+
+--SMOG with glycans - AA_glycans_Dodero21.v1 --
+Dodero-Rojas E, Onuchic JN, and Whitford PC. (2021) eLife 10, e70362. DOI: https://doi.org/10.7554/eLife.70362.

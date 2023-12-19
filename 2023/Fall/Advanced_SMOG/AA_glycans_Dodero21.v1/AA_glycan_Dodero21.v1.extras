@@ -1,0 +1,340 @@
+bondtypes < ; i    j  func       b0          kb
+bondtypes <   CQ CT         1    0.14090   10000 ; PCW added.  Same as C CT.  CQ CT is for modified RNA residues
+bondtypes <   CT H0         1    0.10900   10000 ; 03GLY changed from 331 bsd on NMA nmodes; AA, SUGARS
+bondtypes <   C  C          1     0.1525   10000 ; new99
+bondtypes <   C  OS         1     0.1323   10000 ; new99
+bondtypes <   C  H4         1     0.1080   10000 ; new99
+bondtypes <   C  H5         1     0.1080   10000 ; new99
+bondtypes <   CA OH         1     0.1364   10000 ; new99
+bondtypes <   CM OS         1     0.1240   10000 ; new99
+bondtypes <   Cl CT         1     0.1766   10000 ; new99
+bondtypes <   Br CT         1     0.1944   10000 ; new99
+bondtypes <   I  CT         1     0.2166   10000 ; new99
+bondtypes <   F  CA         1     0.1359   10000 ; new99
+bondtypes <   Cl CA         1     0.1727   10000 ; new99
+bondtypes <   I  CA         1     0.2075   10000 ; new99
+bondtypes <   Br CA         1     0.1890   10000 ; new99
+bondtypes <   OW HW         1    0.09572   10000 ; P water
+bondtypes <   HW HW         1    0.15136   10000 ; P water
+bondtypes <   C  CA         1    0.14090   10000 ; 7,(1986),230; TYR
+bondtypes <   C  CB         1    0.14190   10000 ; 7,(1986),230; GUA
+bondtypes <   C  CM         1    0.14440   10000 ; 7,(1986),230; THY,URA
+bondtypes <   C  CT         1    0.15220   10000 ; 7,(1986),230; AA
+bondtypes <   C  NX         1    0.13830   10000 ; 7,(1986),230; CYT,URA
+bondtypes <   C  NA         1    0.13880   10000 ; 7,(1986),230; GUA.URA
+bondtypes <   C  NC         1    0.13580   10000 ; 7,(1986),230; CYT
+bondtypes <   C  O          1    0.12290   10000 ; 7,(1986),230; AA,CYT,GUA,THY,URA
+bondtypes <   C  O2         1    0.12500   10000 ; 7,(1986),230; GLU,ASP
+bondtypes <   C  OH         1    0.13640   10000 ; 7,(1986),230; TYR
+bondtypes <   CA CA         1    0.14000   10000 ; 7,(1986),230; BENZENE,PHE,TRP,TYR
+bondtypes <   CA CB         1    0.14040   10000 ; 7,(1986),230; ADE,TRP
+bondtypes <   CA CM         1    0.14330   10000 ; 7,(1986),230; CYT
+bondtypes <   CA CT         1    0.15100   10000 ; 7,(1986),230; PHE,TYR
+bondtypes <   CA HA         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes; PHE,TRP,TYR
+bondtypes <   CA H4         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes; no assigned
+bondtypes <   CA N2         1    0.13400   10000 ; 7,(1986),230; ARG,CYT,GUA
+bondtypes <   CA NA         1    0.13810   10000 ; 7,(1986),230; GUA
+bondtypes <   CA NC         1    0.13390   10000 ; 7,(1986),230; ADE,CYT,GUA
+bondtypes <   CB CB         1    0.13700   10000 ; 7,(1986),230; ADE,GUA
+bondtypes <   CB NX         1    0.13740   10000 ; 7,(1986),230; ADE,GUA
+bondtypes <   CB NB         1    0.13910   10000 ; 7,(1986),230; ADE,GUA
+bondtypes <   CB NC         1    0.13540   10000 ; 7,(1986),230; ADE,GUA
+bondtypes <   CK H5         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes; ADE,GUA
+bondtypes <   CK NX         1    0.13710   10000 ; 7,(1986),230; ADE,GUA
+bondtypes <   CK NB         1    0.13040   10000 ; 7,(1986),230; ADE,GUA
+bondtypes <   CM CM         1    0.13500   10000 ; 7,(1986),230; CYT,THY,URA
+bondtypes <   CM CT         1    0.15100   10000 ; 7,(1986),230; THY
+bondtypes <   CM HA         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes; CYT,URA
+bondtypes <   CM H4         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes; CYT,URA
+bondtypes <   CM H5         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes; not assigned
+bondtypes <   CM NX         1    0.13650   10000 ; 7,(1986),230; CYT,THY,URA
+bondtypes <   CQ H5         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes; ADE
+bondtypes <   CQ NC         1    0.13240   10000 ; 7,(1986),230; ADE
+bondtypes <   CT CT         1    0.15260   10000 ; 7,(1986),230; AA, SUGARS
+bondtypes <   CT HC         1    0.10900   10000 ; ged from 331 bsd on NMA nmodes; AA, SUGARS
+bondtypes <   CT H1         1    0.10900   10000 ; ged from 331 bsd on NMA nmodes; AA, RIBOSE
+bondtypes <   CT H2         1    0.10900   10000 ; ged from 331 bsd on NMA nmodes; SUGARS
+bondtypes <   CT H3         1    0.10900   10000 ; ged from 331 bsd on NMA nmodes; not assigned
+bondtypes <   CT HP         1    0.10900   10000 ; nged from 331; AA-lysine, methyl ammonium cation
+bondtypes <   CT NX         1    0.14750   10000 ; 7,(1986),230; ADE,CYT,GUA,THY,URA
+bondtypes <   CT N2         1    0.14630   10000 ; 7,(1986),230; ARG
+bondtypes <   CT OH         1    0.14100   10000 ; 7,(1986),230; SUGARS
+bondtypes <   CT OS         1    0.14100   10000 ; 7,(1986),230; NUCLEIC ACIDS
+bondtypes <   H  N2         1    0.10100   10000 ; 7,(1986),230; ADE,CYT,GUA,ARG
+bondtypes <   H  NX         1    0.10100   10000 ; plain unmethylated bases ADE,CYT,GUA,ARG
+bondtypes <   H  NA         1    0.10100   10000 ; 7,(1986),230; GUA,URA,HIS
+bondtypes <   HO OH         1    0.09600   10000 ; 7,(1986),230; SUGARS,SER,TYR
+bondtypes <   HO OS         1    0.09600   10000 ; 7,(1986),230; NUCLEOTIDE ENDS
+bondtypes <   O2 P          1    0.14800   10000 ; 7,(1986),230; NA PHOSPHATES
+bondtypes <   O3 P          1    0.14800   10000 ; O3 added by PCW; 7,(1986),230; NA PHOSPHATES
+bondtypes <   OH P          1    0.16100   10000 ; 7,(1986),230; NA PHOSPHATES
+bondtypes <   OS P          1    0.16100   10000 ; 7,(1986),230; NA PHOSPHATES
+bondtypes <   CX HC         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes, not needed AA
+bondtypes <   C  N          1    0.13350   10000 ; 7,(1986),230; AA
+bondtypes <   CX CB         1    0.14590   10000 ; 7,(1986),230; TRP
+bondtypes <   CX CT         1    0.14950   10000 ; 7,(1986),230; TRP
+bondtypes <   CX CW         1    0.13520   10000 ; 7,(1986),230; TRP
+bondtypes <   CA CN         1    0.14000   10000 ; 7,(1986),230; TRP
+bondtypes <   CB CN         1    0.14190   10000 ; 7,(1986),230; TRP
+bondtypes <   CC CT         1    0.15040   10000 ; 7,(1986),230; HIS
+bondtypes <   CC CV         1    0.13750   10000 ; 7,(1986),230; HIS(delta)
+bondtypes <   CC CW         1    0.13710   10000 ; 7,(1986),230; HIS(epsilon)
+bondtypes <   CC NA         1    0.13850   10000 ; 7,(1986),230; HIS
+bondtypes <   CC NB         1    0.13940   10000 ; 7,(1986),230; HIS
+bondtypes <   CN NA         1    0.13800   10000 ; 7,(1986),230; TRP
+bondtypes <   CR H5         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes;HIS
+bondtypes <   CR NA         1    0.13430   10000 ; 7,(1986),230; HIS
+bondtypes <   CR NB         1    0.13350   10000 ; 7,(1986),230; HIS
+bondtypes <   CT N          1    0.14490   10000 ; 7,(1986),230; AA
+bondtypes <   CT N3         1    0.14710   10000 ; 7,(1986),230; LYS
+bondtypes <   CT S          1    0.18100   10000 ; ged from 222.0 based on dimethylS nmodes
+bondtypes <   CT SH         1    0.18100   10000 ; ged from 222.0 based on methanethiol nmodes
+bondtypes <   CV H4         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes; HIS
+bondtypes <   CV NB         1    0.13940   10000 ; 7,(1986),230; HIS
+bondtypes <   CW H4         1    0.10800   10000 ; ged from 340. bsd on C6H6 nmodes;HIS(epsilon,+)
+bondtypes <   CW NA         1    0.13810   10000 ; 7,(1986),230; HIS,TRP
+bondtypes <   H  N          1    0.10100   10000 ; 7,(1986),230; AA
+bondtypes <   H  N3         1    0.10100   10000 ; 7,(1986),230; LYS    
+bondtypes <   HS SH         1    0.13360   10000 ; 7,(1986),230; CYS
+bondtypes <   S  S          1    0.20380   10000 ; 7,(1986),230; CYX   (SCHERAGA)
+bondtypes <   CT F          1    0.13800   10000 ; 13,(1992),963;CF4; R0=1.332 FOR CHF3
+angletypes < ;  i    j    k  func       th0       cth
+angletypes < H0  CT  H0           1   109.500  80   ; 03GLY
+angletypes < H0  CT  N            1   109.500  80   ; 03GLY AA general  changed based on NMA nmodes
+angletypes < C   CT  H0           1   109.500  80   ; 03GLY AA general  changed based on NMA nmodes
+angletypes < HW  OW  HW           1   104.520  80   ; TIP3P water
+angletypes < HW  HW  OW           1   127.740  80   ; (found in crystallographic water with 3 bonds)
+angletypes < C   C   O            1   120.000  80   ; new99
+angletypes < C   C   OH           1   120.000  80   ; new99
+angletypes < CT  C   CT           1   117.000  80   ; new99
+angletypes < CT  C   OS           1   115.000  80   ; new99
+angletypes < O   C   OS           1   125.000  80   ; new99
+angletypes < H4  C   C            1   120.000  80   ; new99
+angletypes < H4  C   CM           1   115.000  80   ; new99
+angletypes < H4  C   CT           1   115.000  80   ; new99
+angletypes < H4  C   O            1   120.000  80   ; new99
+angletypes < H4  C   OH           1   120.000  80   ; new99
+angletypes < H5  C   N            1   120.000  80   ; new99
+angletypes < H5  C   O            1   119.000  80   ; new99
+angletypes < H5  C   OH           1   107.000  80   ; new99
+angletypes < H5  C   OS           1   107.000  80   ; new99
+angletypes < CA  CA  OH           1   120.000  80   ; new99
+angletypes < CA  OH  HO           1   113.000  80   ; new99
+angletypes < F   CA  CA           1   121.000  80   ; new99
+angletypes < Cl  CA  CA           1   118.800  80   ; new99
+angletypes < Br  CA  CA           1   118.800  80   ; new99
+angletypes < I   CA  CA           1   118.800  80   ; new99
+angletypes < CM  CM  OS           1   125.000  80   ; new99
+angletypes < H4  CM  OS           1   113.000  80   ; new99
+angletypes < HA  CM  HA           1   120.000  80   ; new99
+angletypes < HA  CM  CT           1   120.000  80   ; new99
+angletypes < H1  CT  CM           1   109.500  80   ; new99
+angletypes < HC  CT  CM           1   109.500  80   ; new99
+angletypes < C   CT  OS           1   109.500  80   ; new99
+angletypes < CM  CT  CT           1   111.000  80   ; new99
+angletypes < CM  CT  OS           1   109.500  80   ; new99
+angletypes < CT  CT  CA           1   114.000  80   ; new99
+angletypes < OS  CT  OS           1   101.000  80   ; new99
+angletypes < F   CT  CT           1   109.000  80   ; new99
+angletypes < F   CT  H2           1   109.500  80   ; new99
+angletypes < Cl  CT  CT           1   108.500  80   ; new99
+angletypes < Cl  CT  H1           1   108.500  80   ; new99
+angletypes < Br  CT  CT           1   108.000  80   ; new99
+angletypes < Br  CT  H1           1   106.500  80   ; new99
+angletypes < I   CT  CT           1   106.000  80   ; new99
+angletypes < CB  C   NA           1   111.300  80   ; NA
+angletypes < CB  C   O            1   128.800  80   ; 
+angletypes < CM  C   NA           1   114.100  80   ; 
+angletypes < CM  C   O            1   125.300  80   ; 
+angletypes < CT  C   O            1   120.400  80   ; 
+angletypes < CT  C   O2           1   117.000  80   ; 
+angletypes < CT  C   OH           1   110.000  80   ; new99
+angletypes < NX  C   NA           1   115.400  80   ; 
+angletypes < NX  C   NC           1   118.600  80   ; 
+angletypes < NX  C   O            1   120.900  80   ; 
+angletypes < NA  C   O            1   120.600  80   ; 
+angletypes < NC  C   O            1   122.500  80   ; 
+angletypes < CT  C   N            1   116.600  80   ; AA general
+angletypes < N   C   O            1   122.900  80   ; AA general
+angletypes < O   C   O            1   126.000  80   ; AA COO- terminal residues
+angletypes < O2  C   O2           1   126.000  80   ; AA GLU            (SCH JPC 79,2379)
+angletypes < O   C   OH           1   120.000  80   ; 
+angletypes < CA  C   CA           1   120.000  80   ; changed from 85.0  bsd on C6H6 nmodes; AA tyr
+angletypes < CA  CM  CT           1   120.000  80   ; PCW added
+angletypes < CA  C   OH           1   120.000  80   ; AA tyr
+angletypes < C   CA  CA           1   120.000  80   ; changed from 85.0  bsd on C6H6 nmodes
+angletypes < CA  CA  CA           1   120.000  80   ; changed from 85.0  bsd on C6H6 nmodes
+angletypes < CA  CA  CB           1   120.000  80   ; changed from 85.0  bsd on C6H6 nmodes
+angletypes < CA  CA  CT           1   120.000  80   ; 
+angletypes < CA  CA  HA           1   120.000  80   ; new99
+angletypes < CA  CA  H4           1   120.000  80   ; new99
+angletypes < CB  CA  HA           1   120.000  80   ; new99
+angletypes < CB  CA  H4           1   120.000  80   ; new99
+angletypes < CB  CA  N2           1   123.500  80   ; 
+angletypes < CB  CA  NC           1   117.300  80   ; 
+angletypes < CM  CA  N2           1   120.100  80   ; 
+angletypes < CM  CA  NC           1   121.500  80   ; 
+angletypes < N2  CA  NA           1   116.000  80   ; 
+angletypes < N2  CA  NC           1   119.300  80   ; 
+angletypes < NA  CA  NC           1   123.300  80   ; 
+angletypes < C   CA  HA           1   120.000  80   ; new99 tyr
+angletypes < N2  CA  N2           1   120.000  80   ; AA arg
+angletypes < CN  CA  HA           1   120.000  80   ; new99 trp
+angletypes < CA  CA  CN           1   120.000  80   ; changed from 85.0  bsd on C6H6 nmodes; AA trp
+angletypes < C   CB  CB           1   119.200  80   ; changed from 85.0  bsd on C6H6 nmodes; NA gua
+angletypes < C   CB  NB           1   130.000  80   ; 
+angletypes < CA  CB  CB           1   117.300  80   ; changed from 85.0  bsd on C6H6 nmodes; NA ade
+angletypes < CA  CB  NB           1   132.400  80   ; 
+angletypes < CB  CB  NX           1   106.200  80   ; 
+angletypes < CB  CB  NB           1   110.400  80   ; 
+angletypes < CB  CB  NC           1   127.700  80   ; 
+angletypes < CT  CQ  NC           1   127.700  80   ; PCW added for modifieds
+angletypes < NX  CB  NC           1   126.200  80   ; 
+angletypes < CX  CB  CA           1   134.900  80   ; changed from 85.0  bsd on C6H6 nmodes; AA trp
+angletypes < CX  CB  CN           1   108.800  80   ; changed from 85.0  bsd on C6H6 nmodes; AA trp
+angletypes < CA  CB  CN           1   116.200  80   ; changed from 85.0  bsd on C6H6 nmodes; AA trp
+angletypes < H5  CK  NX           1   123.050  80   ; new99
+angletypes < H5  CK  NB           1   123.050  80   ; new99
+angletypes < NX  CK  NB           1   113.900  80   ; 
+angletypes < C   CM  CM           1   120.700  80   ; changed from 85.0  bsd on C6H6 nmodes; NA thy
+angletypes < C   CM  CT           1   119.700  80   ; 
+angletypes < C   CM  HA           1   119.700  80   ; new99
+angletypes < C   CM  H4           1   119.700  80   ; new99
+angletypes < CA  CM  CM           1   117.000  80   ; changed from 85.0  bsd on C6H6 nmodes; NA cyt
+angletypes < CA  CM  HA           1   123.300  80   ; new99
+angletypes < CA  CM  H4           1   123.300  80   ; new99
+angletypes < CM  CM  CT           1   119.700  80   ; 
+angletypes < CM  CM  HA           1   119.700  80   ; new99
+angletypes < CM  CM  H4           1   119.700  80   ; new99
+angletypes < CM  CM  NX           1   121.200  80   ; 
+angletypes < H4  CM  NX           1   119.100  80   ; new99
+angletypes < H5  CQ  NC           1   115.450  80   ; new99
+angletypes < NC  CQ  NC           1   129.100  80   ; 
+angletypes < CM  CT  HC           1   109.500  80   ; changed based on NMA nmodes
+angletypes < CT  CT  CT           1   109.500  80   ; 
+angletypes < CT  CT  HC           1   109.500  80   ; changed based on NMA nmodes
+angletypes < CT  CT  H1           1   109.500  80   ; changed based on NMA nmodes
+angletypes < CT  CT  H2           1   109.500  80   ; changed based on NMA nmodes
+angletypes < CT  CT  HP           1   109.500  80   ; changed based on NMA nmodes
+angletypes < CT  CT  NX           1   109.500  80   ; 
+angletypes < CT  CT  OH           1   109.500  80   ; 
+angletypes < CT  CT  OS           1   109.500  80   ; 
+angletypes < HC  CT  HC           1   109.500  80   ; 
+angletypes < H1  CT  H1           1   109.500  80   ; 
+angletypes < HP  CT  HP           1   109.500  80   ; AA lys, ch3nh4+
+angletypes < H2  CT  NX           1   109.500  80   ; changed based on NMA nmodes
+angletypes < H1  CT  NX           1   109.500  80   ; changed based on NMA nmodes
+angletypes < H1  CT  OH           1   109.500  80   ; changed based on NMA nmodes 
+angletypes < H1  CT  OS           1   109.500  80   ; changed based on NMA nmodes 
+angletypes < H2  CT  OS           1   109.500  80   ; changed based on NMA nmodes
+angletypes < NX  CT  OS           1   109.500  80   ; 
+angletypes < H1  CT  N            1   109.500  80   ; AA general  changed based on NMA nmodes
+angletypes < C   CT  H1           1   109.500  80   ; AA general  changed based on NMA nmodes
+angletypes < C   CT  HP           1   109.500  80   ; AA zwitterion  changed based on NMA nmodes
+angletypes < H1  CT  S            1   109.500  80   ; AA cys     changed based on NMA nmodes
+angletypes < H1  CT  SH           1   109.500  80   ; AA cyx     changed based on NMA nmodes
+angletypes < CT  CT  S            1   114.700  80   ; AA cyx            (SCHERAGA  JPC 79,1428)
+angletypes < CT  CT  SH           1   108.600  80   ; AA cys
+angletypes < H2  CT  H2           1   109.500  80   ; AA lys
+angletypes < H1  CT  N2           1   109.500  80   ; AA arg     changed based on NMA nmodes
+angletypes < HP  CT  N3           1   109.500  80   ; AA lys, ch3nh3+, changed based on NMA nmodes
+angletypes < CA  CT  CT           1   114.000  80   ; AA phe tyr          (SCH JPC  79,2379)
+angletypes < C   CT  HC           1   109.500  80   ; AA gln      changed based on NMA nmodes
+angletypes < C   CT  N            1   110.100  80   ; AA general
+angletypes < CT  CT  N2           1   111.200  80   ; AA arg             (JCP 76, 1439)
+angletypes < CT  CT  N            1   109.700  80   ; AA ala, general    (JACS 94, 2657)
+angletypes < C   CT  CT           1   111.100  80   ; AA general
+angletypes < CA  CT  HC           1   109.500  80   ; AA tyr     changed based on NMA nmodes
+angletypes < CT  CT  N3           1   111.200  80   ; AA lys             (JCP 76, 1439)
+angletypes < CC  CT  CT           1   113.100  80   ; AA his
+angletypes < CC  CT  HC           1   109.500  80   ; AA his     changed based on NMA nmodes
+angletypes < C   CT  N3           1   111.200  80   ; AA amino terminal residues
+angletypes < CX  CT  CT           1   115.600  80   ; AA trp
+angletypes < CX  CT  HC           1   109.500  80   ; AA trp    changed based on NMA nmodes
+angletypes < CT  CC  NA           1   120.000  80   ; AA his
+angletypes < CT  CC  CV           1   120.000  80   ; AA his
+angletypes < CT  CC  NB           1   120.000  80   ; AA his
+angletypes < CV  CC  NA           1   120.000  80   ; AA his
+angletypes < CW  CC  NA           1   120.000  80   ; AA his
+angletypes < CW  CC  NB           1   120.000  80   ; AA his
+angletypes < CT  CC  CW           1   120.000  80   ; AA his
+angletypes < H5  CR  NA           1   120.000  80   ; new99 his
+angletypes < H5  CR  NB           1   120.000  80   ; new99 his
+angletypes < NA  CR  NA           1   120.000  80   ; AA his
+angletypes < NA  CR  NB           1   120.000  80   ; AA his
+angletypes < CC  CV  H4           1   120.000  80   ; new99 his
+angletypes < CC  CV  NB           1   120.000  80   ; AA his
+angletypes < H4  CV  NB           1   120.000  80   ; new99 his
+angletypes < CC  CW  H4           1   120.000  80   ; new99 his
+angletypes < CC  CW  NA           1   120.000  80   ; AA his
+angletypes < H4  CW  NA           1   120.000  80   ; new99 his
+angletypes < CX  CW  H4           1   120.000  80   ; new99 trp
+angletypes < CX  CW  NA           1   108.700  80   ; AA trp
+angletypes < CT  CX  CW           1   125.000  80   ; AA trp
+angletypes < CB  CX  CT           1   128.600  80   ; AA trp
+angletypes < CB  CX  CW           1   106.400  80   ; changed from 85.0  bsd on C6H6 nmodes; AA trp
+angletypes < CA  CN  NA           1   132.800  80   ; AA trp
+angletypes < CB  CN  NA           1   104.400  80   ; AA trp
+angletypes < CA  CN  CB           1   122.700  80   ; changed from 85.0  bsd on C6H6 nmodes; AA trp
+angletypes < C   N   CT           1   121.900  80   ; AA general
+angletypes < C   N   H            1   120.000  80   ; new99 general, gln, asn,changed based on NMA nmodes
+angletypes < CT  N   H            1   118.040  80   ; new99 general,     changed based on NMA nmodes
+angletypes < CT  N   CT           1   118.000  80   ; AA pro             (DETAR JACS 99,1232)
+angletypes < CT  N2   CT           1   118.000  80   ; AA pro             (DETAR JACS 99,1232)
+angletypes < H   N   H            1   120.000  80   ; ade,cyt,gua,gln,asn     XX
+angletypes < C   NX  CM           1   121.600  80   ; 
+angletypes < C   NX  CT           1   117.600  80   ; 
+angletypes < C   NX  H            1   119.200  80   ; new99
+angletypes < CB  NX  CK           1   105.400  80   ; 
+angletypes < CB  NX  CT           1   125.800  80   ; 
+angletypes < CB  NX  H            1   125.800  80   ; new99
+angletypes < CK  NX  CT           1   128.800  80   ; 
+angletypes < CK  NX  H            1   128.800  80   ; new99  for unmethylated n.a. bases,chngd bsd NMA nmodes
+angletypes < CM  NX  CT           1   121.200  80   ; 
+angletypes < CM  NX  H            1   121.200  80   ; new99  for unmethylated n.a. bases,chngd bsd NMA nmodes
+angletypes < CA  N2  H            1   120.000  80   ; new99
+angletypes < H   N2  H            1   120.000  80   ; 
+angletypes < CT  N2  H            1   118.400  80   ; new99 arg
+angletypes < CA  N2  CT           1   123.200  80   ; AA arg
+angletypes < CT  N3  H            1   109.500  80   ; AA lys,     changed based on NMA nmodes
+angletypes < CT  N3  CT           1   109.500  80   ; AA pro/nt
+angletypes < H   N3  H            1   109.500  80   ; AA lys, AA(end)
+angletypes < C   NA  C            1   126.400  80   ; 
+angletypes < C   NA  CA           1   125.200  80   ; 
+angletypes < C   NA  H            1   116.800  80   ; new99
+angletypes < CA  NA  H            1   118.000  80   ; new99
+angletypes < CC  NA  CR           1   120.000  80   ; AA his
+angletypes < CC  NA  H            1   120.000  80   ; new99 his
+angletypes < CR  NA  CW           1   120.000  80   ; AA his
+angletypes < CR  NA  H            1   120.000  80   ; new99 his
+angletypes < CW  NA  H            1   120.000  80   ; new99 his
+angletypes < CN  NA  CW           1   111.600  80   ; AA trp
+angletypes < CN  NA  H            1   123.100  80   ; new99 trp
+angletypes < CB  NB  CK           1   103.800  80   ; 
+angletypes < CC  NB  CR           1   117.000  80   ; AA his
+angletypes < CR  NB  CV           1   117.000  80   ; AA his
+angletypes < C   NC  CA           1   120.500  80   ; 
+angletypes < CA  NC  CB           1   112.200  80   ; 
+angletypes < CA  NC  CQ           1   118.600  80   ; 
+angletypes < CB  NC  CQ           1   111.000  80   ; 
+angletypes < C   OH  HO           1   113.000  80   ; new99
+angletypes < CT  OH  HO           1   108.500  80   ; 
+angletypes < HO  OH  P            1   108.500  80   ; 
+angletypes < CT  OS  CT           1   109.500  80   ; 
+angletypes < CT  OH  CT           1   109.500  80   ; PCW added
+angletypes < CT  OS  P            1   120.500  80   ; 
+angletypes < P   OS  P            1   120.500  80   ; 
+angletypes < O2  P   OH           1   108.230  80   ; 
+angletypes < O2  P   O2           1   119.900  80   ; 
+angletypes < O3  P   O3           1   119.900  80   ; O3 added by PCW
+angletypes < O2  P   OS           1   108.230  80   ; 
+angletypes < O3  P   OS           1   108.230  80   ; O3 added by PCW
+angletypes < OH  P   OS           1   102.600  80   ; 
+angletypes < OS  P   OS           1   102.600  80   ; 
+angletypes < CT  S   CT           1    98.900  80   ; AA met
+angletypes < CT  S   S            1   103.700  80   ; AA cyx             (SCHERAGA  JPC 79,1428)
+angletypes < CT  SH  HS           1    96.000  80   ; changed from 44.0 based on methanethiol nmodes
+angletypes < HS  SH  HS           1    92.070  80   ; AA cys
+angletypes < F   CT  F            1   109.100  80   ; JCC,13,(1992),963;
+angletypes < F   CT  H1           1   109.500  80   ; new99
+angletypes < N   C   N            1   120.000  80   ; Added for Urea (same as N2-CA-N2) - EJS
