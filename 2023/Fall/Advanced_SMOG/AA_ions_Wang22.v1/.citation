@@ -1,0 +1,15 @@
+--All-Atom SMOG Model-- 
+Whitford PC, et al. (2009) Proteins: Structure, Function, Bioinformatics, 75, 430-441. 
+
+--Contact Potentials--
+Shadow Algorithm: Noel JK, Whitford PC, Onuchic, JN (2012) J Phys Chem, 116, 8692-8702.
+
+--SMOG with AMBER bonded terms--
+The bond lengths and angles were assigned values found in the AMBER FF03 model (Duan et al. JCC 2003), as described in:
+Whitford PC, Jiang W, Serwer P (2020) Viruses, 12, 1273. 
+ 
+-- Effective potentials for ionic interactions --
+
+Wang, Levi, Mohanty and Whitford
+Journal of the American Chemical Society (2022)
+DOI: 10.1021/jacs.2c04082

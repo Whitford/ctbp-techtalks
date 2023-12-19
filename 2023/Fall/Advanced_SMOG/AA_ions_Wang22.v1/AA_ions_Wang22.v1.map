@@ -1,0 +1,101 @@
+; mapping file for the FF: AA_ions_Wang21.v1.1
+rename OP1 O1P
+rename OP2 O2P
+ignoreRes PSU
+ignoreRes H2U
+ignoreRes 2MG
+ignoreRes OMG
+residue 2MA C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 CM2 N1 N3 N6 N7 N9 O1P O2* O2P O3* O4* O5* P
+; residue 2MG C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 CM2 N1 N2 N3 N7 N9 O1P O2* O2P O3* O4* O5* O6 P
+residue 3AU C1* C10 C11 C12 C13 C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 N40 O1P O2 O2* O2P O3* O30 O31 O4 O4* O5* P
+residue 4OC C1* C2 C2* C3* C4 C4* C5 C5* C6 CM2 CM4 N1 N3 N4 O1P O2 O2* O2P O3* O4* O5* P
+residue 4SU C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 O1P O2 O2* O2P O3* O4* O5* P S4
+residue 5MC C1* C2 C2* C3* C4 C4* C5 C5* C6 CM5 N1 N3 N4 O1P O2 O2* O2P O3* O4* O5* P
+residue 5MU C1* C2 C2* C3* C4 C4* C5 C5* C5M C6 N1 N3 O1P O2 O2* O2P O3* O4 O4* O5* P
+residue A C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 N1 N3 N6 N7 N9 O1P O2* O2P O3* O4* O5* P
+residue A0P C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 N1 N3 N6 N7 N9 O2* O3* O4* O5* %first
+residue A3 C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 N1 N3 N6 N7 N9 O1P O2* O2P O3* O4* O5* P %last
+residue ADE C2 C4 C5 C6 C8 N1 N3 N6 N7 N9
+residue ALA C CA CB N O
+residue ALAC C CA CB N O OXT %last
+residue ALAN C CA CB N O %first
+residue ARG C CA CB CD CG CZ N NE NH1 NH2 O
+residue ARGC C CA CB CD CG CZ N NE NH1 NH2 O OXT %last
+residue ARGN C CA CB CD CG CZ N NE NH1 NH2 O %first
+residue ASN C CA CB CG N ND2 O OD1
+residue ASNC C CA CB CG N ND2 O OD1 OXT %last
+residue ASNN C CA CB CG N ND2 O OD1 %first
+residue ASP C CA CB CG N O OD1 OD2
+residue ASPC C CA CB CG N O OD1 OD2 OXT %last
+residue ASPN C CA CB CG N O OD1 OD2 %first
+residue BK BK
+residue BMG BMG
+residue BCA BCA
+residue BZN BZN
+residue C C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 N4 O1P O2 O2* O2P O3* O4* O5* P
+residue C0P C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 N4 O2 O2* O3* O4* O5* %first
+residue C3 C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 N4 O1P O2 O2* O2P O3* O4* O5* P %last
+residue CYS C CA CB N O SG
+residue CYSC C CA CB N O OXT SG %last
+residue CYSN C CA CB N O SG %first
+residue G C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 N1 N2 N3 N7 N9 O1P O2* O2P O3* O4* O5* O6 P
+residue G0P C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 N1 N2 N3 N7 N9 O2* O3* O4* O5* O6 %first
+residue G3 C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 N1 N2 N3 N7 N9 O1P O2* O2P O3* O4* O5* O6 P %last
+residue G3P C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 N1 N2 N3 N7 N9 O1A O1B O1G O2* O2A O2B O2G O3* O3A O3B O3G O4* O5* O6 PA PB PG %first
+residue GLN C CA CB CD CG N NE2 O OE1
+residue GLNC C CA CB CD CG N NE2 O OE1 OXT %last
+residue GLNN C CA CB CD CG N NE2 O OE1 %first
+residue GLU C CA CB CD CG N O OE1 OE2
+residue GLUC C CA CB CD CG N O OE1 OE2 OXT %last
+residue GLUN C CA CB CD CG N O OE1 OE2 %first
+residue GLY C CA N O
+residue GLYC C CA N O OXT %last
+residue GLYN C CA N O %first
+;residue H2U C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 O1P O2 O2* O2P O3* O4 O4* O5* P
+residue HIS C CA CB CD2 CE1 CG N ND1 NE2 O
+residue HISC C CA CB CD2 CE1 CG N ND1 NE2 O OXT %last
+residue HISN C CA CB CD2 CE1 CG N ND1 NE2 O %first
+residue ILE C CA CB (CD1 CD) CG1 CG2 N O
+residue ILEC C CA CB (CD1 CD) CG1 CG2 N O OXT %last
+residue ILEN C CA CB (CD1 CD) CG1 CG2 N O %first
+residue LEU C CA CB CD1 CD2 CG N O
+residue LEUC C CA CB CD1 CD2 CG N O OXT %last
+residue LEUN C CA CB CD1 CD2 CG N O %first
+residue LYS C CA CB CD CE CG N NZ O
+residue LYSC C CA CB CD CE CG N NZ O OXT %last
+residue LYSN C CA CB CD CE CG N NZ O %first
+residue M2G C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 CM1 CM2 N1 N2 N3 N7 N9 O1P O2* O2P O3* O4* O5* O6 P
+residue MA6 C1* C10 C2 C2* C3* C4 C4* C5 C5* C6 C8 C9 N1 N3 N6 N7 N9 O1P O2* O2P O3* O4* O5* P
+residue MET C CA CB CE CG N O SD
+residue METC C CA CB CE CG N O OXT SD %last
+residue METN C CA CB CE CG N O SD %first
+residue MIA C1* C11 C12 C13 C14 C15 C16 C2 C2* C3* C4 C4* C5 C5* C6 C8 N1 N3 N6 N7 N9 O1P O2* O2P O3* O4* O5* P S10
+residue OMC C1* C2 C2* C3* C4 C4* C5 C5* C6 CM2 N1 N3 N4 O1P O2 O2* O2P O3* O4* O5* P
+; residue OMG C1* C2 C2* C3* C4 C4* C5 C5* C6 C8 CM2 N1 N2 N3 N7 N9 O1P O2* O2P O3* O4* O5* O6 P
+residue OMU C1* C2 C2* C3* C4 C4* C5 C5* C6 CM2 N1 N3 O1P O2 O2* O2P O3* O4 O4* O5* P
+residue PHE C CA CB CD1 CD2 CE1 CE2 CG CZ N O
+residue PHEC C CA CB CD1 CD2 CE1 CE2 CG CZ N O OXT %last
+residue PHEN C CA CB CD1 CD2 CE1 CE2 CG CZ N O %first
+residue PRO C CA CB CD CG N O
+residue PROC C CA CB CD CG N O OXT %last
+residue PRON C CA CB CD CG N O %first
+;residue PSU C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 O1P O2 O2* O2P O3* O4 O4* O5* P
+residue SER C CA CB N O OG
+residue SERC C CA CB N O OG OXT %last
+residue SERN C CA CB N O OG %first
+residue THR C CA CB CG2 N O OG1
+residue THRC C CA CB CG2 N O OG1 OXT %last
+residue THRN C CA CB CG2 N O OG1 %first
+residue TRP C CA CB CD1 CD2 CE2 CE3 CG CH2 CZ2 CZ3 N NE1 O
+residue TRPC C CA CB CD1 CD2 CE2 CE3 CG CH2 CZ2 CZ3 N NE1 O OXT %last
+residue TRPN C CA CB CD1 CD2 CE2 CE3 CG CH2 CZ2 CZ3 N NE1 O %first
+residue TYR C CA CB CD1 CD2 CE1 CE2 CG CZ N O OH
+residue TYRC C CA CB CD1 CD2 CE1 CE2 CG CZ N O OH OXT %last
+residue TYRN C CA CB CD1 CD2 CE1 CE2 CG CZ N O OH %first
+residue U C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 O1P O2 O2* O2P O3* O4 O4* O5* P
+residue U0P C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 O2 O2* O3* O4 O4* O5* %first
+residue U3 C1* C2 C2* C3* C4 C4* C5 C5* C6 N1 N3 O1P O2 O2* O2P O3* O4 O4* O5* P %last
+residue UR3 C1* C2 C2* C3* C3U C4 C4* C5 C5* C6 N1 N3 O1P O2 O2* O2P O3* O4 O4* O5* P
+residue VAL C CA CB CG1 CG2 N O
+residue VALC C CA CB CG1 CG2 N O OXT %last
+residue VALN C CA CB CG1 CG2 N O %first

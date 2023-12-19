@@ -1,0 +1,134 @@
+
+README for the AA_ions_Wang22.v1 force field (5/6/22).
+
+Authors:
+Ailun Wang (a.wang@northeastern.edu)
+Paul Whitford (p.whitford@northeastern.edu)
+
+Included Files:
+AA_ions_Wang22.v1.b 
+AA_ions_Wang22.v1.bif
+AA_ions_Wang22.v1.nb
+AA_ions_Wang22.v1.sif
+AA_ions_Wang22.v1.extras  
+AA_ions_Wang22.v1.ions.def (for use with smog_ion)  
+AA_ions_Wang22.v1.map (for use with smog_adjustPDB)
+
+
+General description:
+This model is an all-atom model with bonded geometry (bond lengths and angles) defined based on the AMBER force field and effective nonbonded ion-ion, ion-biomolecule potentials are included. Excluded volume terms are either from comparison with AMBER, or refinement against explicit-solvent simulations. 
+
+For a detailed description of the model, see: 
+Wang, Levi, Mohanty and Whitford
+Diffuse ions coordinate dynamics in a ribonucleoprotein assembly
+Journal of the American Chemical Society (2022)
+DOI: 10.1021/jacs.2c04082 
+
+
+Model Resolution:
+All non-H atoms are explicitly represented in RNA and proteins.  Ions are explicitly included.  Water  molecules are not included.
+
+
+New features introduced in this model (described in Wang et al, 2022): 
+Non-bonded (vdW-like) interactions are assigned an 18-12 interaction, with parameters that were based on fitting to the 12-6 parameters of the AMBER FF03 force field.  Fitting was applied so that the excluded-volume of each atom mimics the AMBER excluded volume, while introducing a near-zero-depth attractive well.
+
+Partial charges are assigned to each non-H atom using a unified-atom charge representation, where H charges are consolidated on their respective non-H atoms. A Coulomb potential was used for all charge-charge interactions. In this model, the effective potentials were parameterized to a temperature of 0.5 (reduced units), or 60 in Gromacs units.  Since this temperature is intended to model room temperature (T=300K), the scale of the electrostatic interactions needs to be reduced by a factor of 5. When using Gromacs, this is accomplished by increasing the dielectric constant to 400 (instead of 80 for water). When using OpenSMOG/OpenMM, then the rescaling is already encoded in the template files, and no additional changes are required by the user.
+
+For ion-ion and ion-polymer interactions, the potential (in addition to the Coulomb term) is defined by 1/r^12 + 5 Gaussians.  The functional form of the potential was adopted based on the works of Savelyev and Papoian (J Chem Phys B, 113, 7786-93, 2009), though the current parameters were developed subsequently (described in Wang et al 2022) for this all-atom model.
+
+
+Supported residues and atoms:
+Standard protein and RNA residues.  See .map file for full list of supported residues.
+K+, Cl- and Mg2+
+
+
+Aspects built upon earlier models:
+The distributions of stabilizing energetic terms (i.e. dihedrals vs. contacts) were assigned consistent with Whitford et al, Proteins (2009) and Noel et al. PLOS Comp Bio (2016). 
+
+The contact map is based on the Shadow Contact Map algorithm (Noel, et al. JCP 2012) with a 6A cutoff with 1A atom radius.
+
+The minimum for each contact is positioned at 0.96 times the native distance.  This was first introduced in simulations of the ribosome (Nguyen and Whitford, Nature Comm, 2016) to avoid artificial expansion. That is, the SMOG model defines the potential energy minimum. If native distances are used, then the free-energy minimum is slightly expanded, due to entropic contributions. We have found that, generally, scaling by 0.96 ensures that the native distance is very close to the free-energy minimum (at T=0.5 reduced units).
+
+The bond lengths and distances are assigned the values given in the AMBER FF03 force field (Duan, et al. JCC 2003), as employed in a previous AMBER-SMOG model (Whitford, et al. Viruses 2020. SMOG 2 Force Field Repo ID: SBM_AA-amber-bonds). Similarly, planar dihedrals are assigned cosine potentials with periodicity 2. 
+
+
+Version Information:
+These templates are only compatible with SMOG 2, version 2.4.4 and later.
+
+
+Gromacs Usage: Simulations must be performed using a modified version of Gromacs, which is available at the smog-server.org force field repository.  Currently, the FF was added to an unofficial distribution of Gromacs v5.1.4.
+
+
+OpenMM Usage: This force field may be used with the -OpenSMOG flag in SMOG 2, which are compatible with OpenSMOG (v1.1 or later)
+
+
+Other usage Notes:
+	When adding ions with smog_ion, make sure to use the -t flag and give this template directory name, so that the proper names of charges will be given.
+
+
+
+Example MDP file:
+Since this is a specialized force field, there are a few parameters that are important to consider when using Gromacs.  Below is an example MDP file that would work with this force field.
+
+
+############## BEGIN MDP FILE ##############
+integrator               = sd
+;time step in femtoseconds
+dt                       = 0.002
+;number of steps
+nsteps                   = 10000000
+;frequency to write coordinates to output trajectory file
+nstxout                  = 0
+;frequency to write velocities to output trajectory file
+nstvout                  = 0
+;frequency to write energies to log file
+nstlog                   = 1000
+;frequency to write energies to energy file
+nstenergy                = 1000
+;frequency to write coordinates to xtc trajectory
+nstxtcout                = 1000
+;precision of xtc
+xtc_precision            = 1000
+;group(s) to write to xtc trajectory
+xtc_grps                 = system
+;group(s) to write to energy file
+energygrps               = system
+;Frequency to update the neighbor list (and the long-range forces,
+;when using twin-range cut-off's).
+nstlist                  = 20
+coulombtype              = Cut-off
+table-extension          = 20
+;Make a grid in the box and only check atoms in neighboring grid cells
+;when constructing a new neighbor list every nstlist steps.
+cutoff-scheme            = verlet
+ns_type                  = grid
+;cut-off distance for the short-range neighbor list. Since the effective potentials tend to be longer range, we use a longer cutoff
+rlist                    = 2.0
+;treatment of electrostatic interactions
+rcoulomb                 = 2.0
+;treatment of van der waals interactions
+rvdw                     = 2.0
+; use "desolve" for vdw-type if there are explicit diffuse ions in the system.  This enables the 5-gaussian effective potentials
+vdw-type                 = desolve
+;need to use periodic boundary conditions since gromacs5
+;requires cutoff-scheme=verlet in order to use openmp
+;threads. So check your box dimensions in the .gro
+;and make sure they make sense.
+pbc                      = xyz
+;Temperature coupling
+tc-grps                  = system
+tau_t                    = 1.0
+; This model was parameterized such that 60 reflects 300K
+ref_t                    = 60
+;Pressure coupling
+Pcoupl                   = no
+epsilon_r                = 400
+;Velocity generation
+gen_vel                  = yes
+gen_temp                 = 60
+gen_seed                 = -1
+;Constrain no bonds
+constraints              = none
+;Since we use sd, which will damp any linear motions, you don't need to remove translational motion.  However, this could also be set to linear without a problem.
+comm_mode = none
+############### END MDP FILE ###############
